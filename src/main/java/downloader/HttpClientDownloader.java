@@ -11,7 +11,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.concurrent.BlockingQueue;
 
 import org.apache.http.Header;
 import org.apache.http.HeaderIterator;
@@ -29,10 +28,10 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 
-import container.URLContainer;
 import us.codecraft.webmagic.selector.XpathSelector;
 
-public class HttpClientDownloader extends URLContainer  implements Downloader {
+public class HttpClientDownloader implements Downloader {
+	private static final String ALGORITHMS = "https://www.leetcode.com/problemset/algorithms/";
 	private static final String INDEX_URL = "https://leetcode.com";                                    														//首页的url地址
 	private static final String LOGIN_URL = "https://leetcode.com/accounts/login/";																//登录页面url地址			
 	private static final String PASSWORD = "thd04180015";																										//登录密码
@@ -51,16 +50,12 @@ public class HttpClientDownloader extends URLContainer  implements Downloader {
 	private static final String problemNamePath = "//div[@class='col-md-12']/h4/a/text()";                                                  //题目名称Xpath路径
 	private static final String codePath = "//div[@class='ace_content']/text()";																			//得到代码Xpath路径
 	private static CloseableHttpClient httpClient;
-	/**
-	 * 
-	 * 创建一个新的实例 HttpClientDownloader.
-	 *
-	 */
-	public HttpClientDownloader() {
-		init();
-	}
+	private static final HttpClientDownloader downloader = new HttpClientDownloader();
 
-	public void init() {
+	public static HttpClientDownloader getInstance() {
+		return downloader;
+	}
+	public static void init(String username, String password) {
 		httpClient = HttpClients.createDefault();
 		HttpGet httpGet = new HttpGet(INDEX_URL);
 		CloseableHttpResponse response1;
@@ -87,8 +82,8 @@ public class HttpClientDownloader extends URLContainer  implements Downloader {
 		httpPost.addHeader("Referer", LOGIN_URL);
 		httpPost.addHeader("Origin", INDEX_URL);
 		Map<String, String> map = new HashMap<String, String>();
-		map.put("login", USER_NAME);
-		map.put("password", PASSWORD);
+		map.put("login", username);
+		map.put("password", password);
 		map.put("csrfmiddlewaretoken", cookieString);
 		map.put("remember", "on");
 		try {
@@ -196,20 +191,21 @@ public class HttpClientDownloader extends URLContainer  implements Downloader {
 		return null;
 	}
 	
-	public void problemListDownloader(String url) {
-		doDispatcher(url, problemQueue);
+	public List<String> problemListDownloader() {
+		return doDispatcher(ALGORITHMS);
 	}
 
-	public void problemDescriptionDownloader(String url) {
-		doDispatcher(url, problemSubmission);
+	public List<String> problemDescriptionDownloader(String url) {
+		return doDispatcher(url);
 	}
 
-	public void submissionListDownloader(String url, String name) {
-		doDispatcher(url, problemCodePage, name);
+	public List<String> submissionListDownloader(String url, String name) {
+		return doDispatcher(url, name, httpClient);
 	}
 
-	public void codePageDownloader(String url) {
+	public List<String> codePageDownloader(String url) {
 		//爬取代码
+		return null;
 	}
 
 	public String getHtml(HttpResponse response) {
@@ -247,7 +243,7 @@ public class HttpClientDownloader extends URLContainer  implements Downloader {
 	 * @exception
 	 * @since  1.0.0
 	 */
-	public void doDispatcher(String url, BlockingQueue<String> blockingQueue) {
+	public List<String> doDispatcher(String url) {
 		HttpGet httpGet1 = new HttpGet(url);
 		try {
 			HttpResponse response1 = httpClient.execute(httpGet1);
@@ -255,18 +251,15 @@ public class HttpClientDownloader extends URLContainer  implements Downloader {
 			
 			XpathSelector xpathSelector = new XpathSelector(problemLinkPath);
 			List<String> listTmp = xpathSelector.selectList(getHtml(response1));
-			for (String string: listTmp) {
-				blockingQueue.put(string);
-			}
 			HttpEntity entity1 = response1.getEntity();
 			EntityUtils.consume(entity1);
+			return listTmp;
 		} catch (ClientProtocolException e) {
 			System.out.println(e.getMessage());
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
-		} catch (InterruptedException e) {
-			System.out.println(e.getMessage());
 		}
+		return null;
 	}
 	/**
 	 * 
@@ -279,7 +272,7 @@ public class HttpClientDownloader extends URLContainer  implements Downloader {
 	 * @exception
 	 * @since  1.0.0
 	 */
-	public void doDispatcher(String url, BlockingQueue<String> blockingQueue, String name) {
+	public List<String> doDispatcher(String url, String name, CloseableHttpClient httpClient) {
 		HttpGet httpGet1 = new HttpGet(url);
 		try {
 			HttpResponse response1 = httpClient.execute(httpGet1);
@@ -287,17 +280,14 @@ public class HttpClientDownloader extends URLContainer  implements Downloader {
 			
 			XpathSelector xpathSelector = new XpathSelector(problemLinkPath);
 			List<String> listTmp = xpathSelector.selectList(getHtml(response1));
-			for (String string: listTmp) {
-				blockingQueue.put(string);
-			}
 			HttpEntity entity1 = response1.getEntity();
 			EntityUtils.consume(entity1);
+			return listTmp;
 		} catch (ClientProtocolException e) {
 			System.out.println(e.getMessage());
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
-		} catch (InterruptedException e) {
-			System.out.println(e.getMessage());
 		}
+		return null;
 	}
 }

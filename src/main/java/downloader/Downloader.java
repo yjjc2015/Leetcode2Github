@@ -19,24 +19,25 @@ public interface Downloader {
 	/**
 	 * 爬取题目列表
 	 * @param url
+	 * @return 
 	 */
-	public void problemListDownloader(String url);
+	public List<String> problemListDownloader();
 	
 	/**
 	 * 进入题目描述页面，爬取题目提交url列表
 	 * @param url
 	 */
-	public void problemDescriptionDownloader(String url);
+	public List<String> problemDescriptionDownloader(String url);
 	
 	/**
 	 *	进入题目提交列表页面，爬取code所在页面url 
 	 * @param url
 	 */
-	public void submissionListDownloader(String url, String name);
+	public List<String> submissionListDownloader(String url, String name);
 	
 	/**
 	 * 进入code所在页面，爬取code
 	 * @param url
 	 */
-	public void codePageDownloader(String url);
+	public List<String> codePageDownloader(String url);
 }
