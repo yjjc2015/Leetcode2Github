@@ -1,4 +1,4 @@
-package haodong.net.cn.test;
+package console;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,18 +17,19 @@ import org.json.JSONObject;
  * @author haodong
  *
  */
-public class Test {
+public class URLConnectionExample {
 	private static final String PASSWORD = "thd04180015";
 	private static final String USERNAME = "tanghaodong25@163.com";
 	private static final String LOGIN_STRING = "https://www.leetcode.com/accounts/login/";
 	private static final String INDEX_STRING = "https://www.leetcode.com";
 	private static final String ALGORITHMS = "https://www.leetcode.com/problemset/algorithms/";
 	private static String cookie = null;
-
+	HttpURLConnection connection = null;
 	public static void main(String[] args) throws IOException {
-		Test test = new Test();
+		URLConnectionExample test = new URLConnectionExample();
 		test.getToken("tanghaodong25@163.com", "thd04180015", LOGIN_STRING);
 		test.getAlgorithmsPage(ALGORITHMS);
+//		CodeProcesser.portal(ALGORITHMS, cookie);
 	}
 	/**
 	 * 获得认证，得到登录token
@@ -37,7 +38,7 @@ public class Test {
 	 * @param urlString
 	 */
 	public void getToken(String name, String password, String urlString) {
-		HttpURLConnection connection = null;
+		
 		OutputStream out = null;
 		try {
 			URL url = new URL(urlString);
@@ -117,8 +118,8 @@ public class Test {
 	 */
 	public void getAlgorithmsPage(String urlString) {
 		try {
-			URL url = new URL(urlString);
-			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+			URL url = new URL("https://leetcode.com/problems/rotate-array/submissions/");
+			connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestProperty("Cookie", cookie);
 			BufferedReader br = new BufferedReader(new InputStreamReader(
 					connection.getInputStream()));
