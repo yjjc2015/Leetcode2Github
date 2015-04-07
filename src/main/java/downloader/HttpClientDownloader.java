@@ -27,6 +27,8 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 import us.codecraft.webmagic.selector.XpathSelector;
 
@@ -40,22 +42,28 @@ public class HttpClientDownloader implements Downloader {
 	private static final String problemCodeURL = ".*/submissions/detail/.*";																		//检验是否是题目代码页面
 	private static final String problemListURL = ".*/problemset/algorithms/$";																		//检验是否是题目列表页面
 	
-	private static final String problemLinkPath = "//table[@class='table table-striped table-centered']/tbody/tr/td/a/@href";				//进入问题描述 Xpath路径
-	private static final String getProblemLinkPath = "//table[@class='table table-striped table-centered']/tbody/tr/td/a/text()";				//得到题目名称Xpath路径
-	private static final String submissionLinkPath = "//div[@class='row']/div/div/a/@href";																		//进入题目提交页面Xpath路径
-	private static final String codePagePath = "//table[@id='result_testcases']/tbody/tr/td/a/@href";															//进入题目代码页面Xpath路径
-	private static final String codePageStatusPath = "//table[@id='result_testcases]/t"
-																							+ "body/tr/td/a[@class='status-accepted text-success']/strong/text()";                     //题目提交状态Xpath路径
-	
 	private static final String problemNamePath = "//div[@class='col-md-12']/h4/a/text()";                                                  //题目名称Xpath路径
 	private static final String codePath = "//div[@class='ace_content']/text()";																			//得到代码Xpath路径
 	private static CloseableHttpClient httpClient;
 	private static final HttpClientDownloader downloader = new HttpClientDownloader();
+	private static Logger myLog;
 
 	public static HttpClientDownloader getInstance() {
 		return downloader;
 	}
+	
+	/**
+	 * 
+	 * init(初始化httpclient，以单例模式保存httpclient)
+	 * @param username
+	 * @param password
+	 *void
+	 * @exception
+	 * @since  1.0.0
+	 */
 	public static void init(String username, String password) {
+		PropertyConfigurator.configure("test.log");
+		myLog = Logger.getLogger(HttpClientDownloader.class);
 		httpClient = HttpClients.createDefault();
 		HttpGet httpGet = new HttpGet(INDEX_URL);
 		CloseableHttpResponse response1;
@@ -63,15 +71,14 @@ public class HttpClientDownloader implements Downloader {
 		HttpEntity entity1;
 		try {
 			response1 = httpClient.execute(httpGet);
-			printResponse(response1);
+			//printResponse(response1);
+			myLog.debug("第一次登录，试图获取cookie值，response状态为：" + response1.getStatusLine());
 			cookieString = getCookie(response1);
 			entity1 = response1.getEntity();
 			EntityUtils.consume(entity1);
 		} catch (ClientProtocolException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		} catch (IOException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 
@@ -89,7 +96,8 @@ public class HttpClientDownloader implements Downloader {
 		try {
 			httpPost.setEntity(new UrlEncodedFormEntity(getParam(map), "UTF-8"));
 			response1 = httpClient.execute(httpPost);
-			printResponse(response1);
+			//printResponse(response1);
+			myLog.debug("试图登录leetcode网站， response状态为： " + response1.getStatusLine());
 			entity1 = response1.getEntity();
 			EntityUtils.consume(entity1);
 		} catch (UnsupportedEncodingException e) {
@@ -99,68 +107,80 @@ public class HttpClientDownloader implements Downloader {
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 		}
+		myLog.debug("HttpClientDownloader初始化完成");
 	}
 
 	public void setTread(Thread thread) {
-		// TODO Auto-generated method stub
-
+		
+	}
+	
+	/**
+	 * 获取问题列表
+	 */
+	public List<String> problemListDownloader(String pattern) {
+		myLog.debug("尝试获取问题列表");
+		return doDispatcher(ALGORITHMS, pattern);
 	}
 
-	public void download(String url) {
-		CloseableHttpClient httpClient = HttpClients.createDefault();
-		HttpGet httpGet = new HttpGet("https://leetcode.com");
-		CloseableHttpResponse response1;
-		String cookieString = null;
-		HttpEntity entity1;
-		try {
-			response1 = httpClient.execute(httpGet);
-			printResponse(response1);
-			cookieString = getCookie(response1);
-			entity1 = response1.getEntity();
-			EntityUtils.consume(entity1);
-		} catch (ClientProtocolException e1) {
-			System.out.println(e1.getMessage());
-		} catch (IOException e1) {
-			System.out.println(e1.getMessage());
-		}
+	/**
+	 * 根据问题问题描述信息所在的url，爬取问题提交列表对应的url
+	 */
+	public List<String> problemDescriptionDownloader(String url, String pattern) {
+		myLog.debug("尝试获取问题提交记录列表");
+		return doDispatcher(url, pattern);
+	}
+	
+	public List<String> submissionListDownloader(String url, String pattern) {
+		myLog.debug("尝试获取代码页面url");
+		return doDispatcher(url, pattern);
+	}
 
-		HttpPost httpPost = new HttpPost("https://leetcode.com/accounts/login/");
-		httpPost.addHeader(
-				"User-Agent",
-				"Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6)Gecko/20091201 Firefox/3.5.6");
-		httpPost.addHeader("Referer", "https://leetcode.com/accounts/login/");
-		httpPost.addHeader("Origin", "https://leetcode.com");
-		Map<String, String> map = new HashMap<String, String>();
-		map.put("login", "tanghaodong25@163.com");
-		map.put("password", "thd04180015");
-		map.put("csrfmiddlewaretoken", cookieString);
-		map.put("remember", "on");
+	public List<String> codePageDownloader(String url, String pattern) {
+		myLog.debug("尝试获取代码");
+		//爬取代码
+		return null;
+	}
+
+	/**
+	 * 
+	 * doDispatcher()
+	 * (适用于获取问题详情url和获取问题提交列表url)
+	 * @param url
+	 * @param blockingQueue
+	 *void
+	 * @exception
+	 * @since  1.0.0
+	 */
+	public List<String> doDispatcher(String url, String pattern) {
+		HttpGet httpGet1 = new HttpGet(url);
+		myLog.debug("进入doDispatcher函数，准备对"+url+"进行解析");
 		try {
-			httpPost.setEntity(new UrlEncodedFormEntity(getParam(map), "UTF-8"));
-			response1 = httpClient.execute(httpPost);
-			printResponse(response1);
-			entity1 = response1.getEntity();
+			HttpResponse response1 = httpClient.execute(httpGet1);
+			myLog.debug("正在对"+url+"进行访问，response状态为：" + response1.getStatusLine());
+			myLog.debug("试图对"+url+"进行解析，其中pattern为："+pattern);
+			XpathSelector xpathSelector = new XpathSelector(pattern);
+			List<String> listTmp = xpathSelector.selectList(getHtml(response1));
+			HttpEntity entity1 = response1.getEntity();
 			EntityUtils.consume(entity1);
-		} catch (UnsupportedEncodingException e) {
-			System.out.println(e.getMessage());
+			return listTmp;
 		} catch (ClientProtocolException e) {
 			System.out.println(e.getMessage());
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 		}
+		return null;
 	}
-
-	public static List<NameValuePair> getParam(Map parameterMap) {
-		List<NameValuePair> param = new ArrayList<NameValuePair>();
-		Iterator it = parameterMap.entrySet().iterator();
-		while (it.hasNext()) {
-			Entry parmEntry = (Entry) it.next();
-			param.add(new BasicNameValuePair((String) parmEntry.getKey(),
-					(String) parmEntry.getValue()));
-		}
-		return param;
-	}
-
+	
+	/**
+	 * 
+	 * printResponse(打印response信息)
+	 * @param httpResponse
+	 * @throws ParseException
+	 * @throws IOException
+	 *void
+	 * @exception
+	 * @since  1.0.0
+	 */
 	public static void printResponse(HttpResponse httpResponse)
 			throws ParseException, IOException {
 		// 获取响应消息实体
@@ -168,46 +188,31 @@ public class HttpClientDownloader implements Downloader {
 		// 响应状态
 		System.out.println("status:" + httpResponse.getStatusLine());
 		System.out.println("headers:");
-		HeaderIterator iterator = httpResponse.headerIterator();
-		while (iterator.hasNext()) {
-			System.out.println("\t" + iterator.next());
-		}
-		// 判断响应实体是否为空
-		if (entity != null) {
-			String responseString = EntityUtils.toString(entity);
-			System.out.println("response length:" + responseString.length());
-			System.out.println("response content:"
-					+ responseString.replace("\r\n", ""));
-		}
-	}
-
-	public static String getCookie(HttpResponse httpResponse) {
-		Header[] headers = httpResponse.getAllHeaders();
-		for (Header value : headers) {
-			if (value.getName().equals("Set-Cookie")) {
-				return value.getValue().split(";")[0].split("=")[1];
-			}
-		}
-		return null;
+//		HeaderIterator iterator = httpResponse.headerIterator();
+//		while (iterator.hasNext()) {
+//			System.out.println("\t" + iterator.next());
+//		}
+//		// 判断响应实体是否为空
+//		if (entity != null) {
+//			String responseString = EntityUtils.toString(entity);
+//			System.out.println("response length:" + responseString.length());
+//			System.out.println("response content:"
+//					+ responseString.replace("\r\n", ""));
+//		}
+		PropertyConfigurator.configure("test.log");
+		Logger m_log = Logger.getLogger(HttpClientDownloader.class);
+		m_log.debug("hello world");
 	}
 	
-	public List<String> problemListDownloader() {
-		return doDispatcher(ALGORITHMS);
-	}
-
-	public List<String> problemDescriptionDownloader(String url) {
-		return doDispatcher(url);
-	}
-
-	public List<String> submissionListDownloader(String url, String name) {
-		return doDispatcher(url, name, httpClient);
-	}
-
-	public List<String> codePageDownloader(String url) {
-		//爬取代码
-		return null;
-	}
-
+	/**
+	 * 
+	 * getHtml(辅助方法，根据response信息返回String类型的html内容)
+	 * @param response
+	 * @return
+	 *String
+	 * @exception
+	 * @since  1.0.0
+	 */
 	public String getHtml(HttpResponse response) {
 		BufferedReader br = null;
 		try {
@@ -233,61 +238,43 @@ public class HttpClientDownloader implements Downloader {
 		}
 		return null;
 	}
+	
 	/**
 	 * 
-	 * doDispatcher()
-	 * (适用于获取问题详情url和获取问题提交列表url)
-	 * @param url
-	 * @param blockingQueue
-	 *void
+	 * getCookie(获取leetcode网站的Set-Cookie值)
+	 * @param httpResponse
+	 * @return
+	 *String
 	 * @exception
 	 * @since  1.0.0
 	 */
-	public List<String> doDispatcher(String url) {
-		HttpGet httpGet1 = new HttpGet(url);
-		try {
-			HttpResponse response1 = httpClient.execute(httpGet1);
-			printResponse(response1);
-			
-			XpathSelector xpathSelector = new XpathSelector(problemLinkPath);
-			List<String> listTmp = xpathSelector.selectList(getHtml(response1));
-			HttpEntity entity1 = response1.getEntity();
-			EntityUtils.consume(entity1);
-			return listTmp;
-		} catch (ClientProtocolException e) {
-			System.out.println(e.getMessage());
-		} catch (IOException e) {
-			System.out.println(e.getMessage());
+	public static String getCookie(HttpResponse httpResponse) {
+		Header[] headers = httpResponse.getAllHeaders();
+		for (Header value : headers) {
+			if (value.getName().equals("Set-Cookie")) {
+				return value.getValue().split(";")[0].split("=")[1];
+			}
 		}
 		return null;
 	}
+	
 	/**
 	 * 
-	 * doDispatcher()
-	 * (用于获取accept代码url)
-	 * @param url
-	 * @param blockingQueue
-	 * @param name
-	 *void
+	 * getParam(辅助方法)
+	 * @param parameterMap
+	 * @return
+	 *List<NameValuePair>
 	 * @exception
 	 * @since  1.0.0
 	 */
-	public List<String> doDispatcher(String url, String name, CloseableHttpClient httpClient) {
-		HttpGet httpGet1 = new HttpGet(url);
-		try {
-			HttpResponse response1 = httpClient.execute(httpGet1);
-			printResponse(response1);
-			
-			XpathSelector xpathSelector = new XpathSelector(problemLinkPath);
-			List<String> listTmp = xpathSelector.selectList(getHtml(response1));
-			HttpEntity entity1 = response1.getEntity();
-			EntityUtils.consume(entity1);
-			return listTmp;
-		} catch (ClientProtocolException e) {
-			System.out.println(e.getMessage());
-		} catch (IOException e) {
-			System.out.println(e.getMessage());
+	public static List<NameValuePair> getParam(Map parameterMap) {
+		List<NameValuePair> param = new ArrayList<NameValuePair>();
+		Iterator it = parameterMap.entrySet().iterator();
+		while (it.hasNext()) {
+			Entry parmEntry = (Entry) it.next();
+			param.add(new BasicNameValuePair((String) parmEntry.getKey(),
+					(String) parmEntry.getValue()));
 		}
-		return null;
+		return param;
 	}
 }
