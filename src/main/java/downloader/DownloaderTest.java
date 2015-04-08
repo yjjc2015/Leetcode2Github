@@ -1,6 +1,9 @@
 package downloader;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -23,6 +26,10 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
+
+import selector.XpathSelector;
+
+
 
 public class DownloaderTest {
 	private List<String> ProblemDescriptionPath = new ArrayList<String>();
@@ -60,6 +67,9 @@ public class DownloaderTest {
 		HttpGet httpGet1 = new HttpGet("https://leetcode.com/problems/rotate-array/submissions/");
 		response1 = httpClient.execute(httpGet1);
 		printResponse(response1);
+		XpathSelector xpathSelector = new XpathSelector("//div[@class='row']/div/div/a/@href");
+		List<String> listTmp = xpathSelector.selectList(getHtml(response1));
+		System.out.println(listTmp.size());
 		entity1 = response1.getEntity();
 		EntityUtils.consume(entity1);
 	}
@@ -105,4 +115,29 @@ public class DownloaderTest {
 		return null;
 	}
 	
+	public static String getHtml(HttpResponse response) {
+		BufferedReader br = null;
+		try {
+			InputStream responseBody = response.getEntity().getContent();
+			StringBuilder stringBuilder = new StringBuilder();
+			br = new BufferedReader(new InputStreamReader(
+					responseBody));
+			String line = null;
+			while ((line = br.readLine()) != null) {
+				stringBuilder.append("\n" + line);
+			}
+			return stringBuilder.toString();
+		} catch (IllegalStateException e) {
+			System.out.println(e.getMessage());
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		} finally {
+			try {
+				br.close();
+			} catch (IOException e) {
+				System.out.println(e.getMessage());
+			}
+		}
+		return null;
+	}
 }

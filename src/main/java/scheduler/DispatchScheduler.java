@@ -16,8 +16,10 @@ public class DispatchScheduler implements Scheduler {
 	private static final String getProblemLinkPath = "//table[@class='table table-striped table-centered']/tbody/tr/td/a/text()";				//得到题目名称Xpath路径
 	private static final String submissionLinkPath = "//div[@class='row']/div/div/a/@href";																		//进入题目提交页面Xpath路径
 	private static final String codePagePath = "//table[@id='result_testcases']/tbody/tr/td/a/@href";															//进入题目代码页面Xpath路径
-	private static final String codePageStatusPath = "//table[@id='result_testcases]/t"
-																							+ "body/tr/td/a[@class='status-accepted text-success']/strong/text()";                     //题目提交状态Xpath路径
+//	private static final String codePageStatusPath = "//table[@id='result_testcases]/t"
+//																							+ "body/tr/td/a[@class='status-accepted text-success']/strong/text()";                     //题目提交状态Xpath路径
+//	private static final String codePageStatusPath = "//div[@class='row']/div/div/a/@href";
+	private static final String codePageStatusPath = "//a[@class='text-danger status-accepted']/@href";
 	private Logger myLog;
 	/**
 	 * 
@@ -35,7 +37,7 @@ public class DispatchScheduler implements Scheduler {
 			try {
 				myLog.debug("进入startProcess，试图初始化task queue");
 				List<String> list = downloader.problemListDownloader(problemLinkPath);
-				setTask(list);
+				setTask(list, null);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -77,19 +79,16 @@ public class DispatchScheduler implements Scheduler {
 	 * @since  1.0.0
 	 */
 	public void getDownloadResult(ParserTask task) throws InterruptedException {
-		if (task.getType() == ParserTask.TaskType.GET_SUBMISION_URL) {
-			myLog.debug("正在获取问题提交列表url");
-			List<String> list = downloader.problemDescriptionDownloader(task.getUrl(), submissionLinkPath);
-			setTask(list);
-		} else if (task.getType() == ParserTask.TaskType.GET_CODE_URL) {
-			myLog.debug("正在获取代码页面url");
-			List<String> list = downloader.submissionListDownloader(task.getUrl(), codePagePath);
-			setTask(list);
-		} else if (task.getType() == ParserTask.TaskType.GET_CODE) {
-			myLog.debug("正在获取代码");
-			//do something to get code
+		if (task.getType().equals(ParserTask.TaskType.SUBMISION_URL)) {
+			myLog.debug("该任务为获取问题代码");
+			List<String> list = downloader.problemDescriptionDownloader(task.getUrl(), codePageStatusPath);
+			setTask(list, task.getType());
+		} else if (task.getType().equals(ParserTask.TaskType.CODE_PAGE_URL)) {
+			//获取代码
 		} else {
-			System.out.println("无法识别该url，请填写正确的url。");
+			myLog.debug("正在获取问题提交列表，url为： " + task.getUrl());
+			List<String> list = downloader.problemDescriptionDownloader(task.getUrl(), submissionLinkPath);
+			setTask(list, task.getType());
 		}
 	}
 	
@@ -102,10 +101,18 @@ public class DispatchScheduler implements Scheduler {
 	 * @exception
 	 * @since  1.0.0
 	 */
-	public void setTask(List<String> list) throws InterruptedException {
+	public void setTask(List<String> list, ParserTask.TaskType type) throws InterruptedException {
+		if (list.size() == 0) return;
+		if (type != null && type.equals(ParserTask.TaskType.SUBMISION_URL)) {
+			ParserTask task = new ParserTask(new StringBuilder("https://leetcode.com").append(list.get(0)).toString());
+			myLog.debug("正在进行入栈操作，task的url为： " + task.getUrl());
+			task.isType();
+			queue.put(task);
+			return;
+		}
 		for (String value: list) {
 			ParserTask task = new ParserTask(new StringBuilder("https://leetcode.com").append(value).toString());
-			myLog.debug("task的url为： " + task.getUrl());
+			myLog.debug("正在进行入栈操作，task的url为： " + task.getUrl());
 			task.isType();
 			queue.put(task);
 		}

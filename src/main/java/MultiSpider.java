@@ -12,7 +12,7 @@ import downloader.HttpClientDownloader;
 
 public class MultiSpider {
 
-	private int threadNum = 1;
+	private int threadNum = 10;
 	private ExecutorService service;
 	private String username;
 	private String password;
@@ -53,6 +53,6 @@ public class MultiSpider {
 	
 	public static void main(String[] args) {
 		MultiSpider spider = new MultiSpider();
-		spider.create("tanghaodong25@163.com", "thd04180015").run();;
+		spider.create("tanghaodong25@163.com", "***").run();
 	}
 }

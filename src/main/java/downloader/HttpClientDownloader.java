@@ -13,7 +13,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import org.apache.http.Header;
-import org.apache.http.HeaderIterator;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -30,7 +29,8 @@ import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-import us.codecraft.webmagic.selector.XpathSelector;
+import selector.XpathSelector;
+
 
 public class HttpClientDownloader implements Downloader {
 	private static final String ALGORITHMS = "https://www.leetcode.com/problemset/algorithms/";
@@ -163,9 +163,7 @@ public class HttpClientDownloader implements Downloader {
 			HttpEntity entity1 = response1.getEntity();
 			EntityUtils.consume(entity1);
 			return listTmp;
-		} catch (ClientProtocolException e) {
-			System.out.println(e.getMessage());
-		} catch (IOException e) {
+		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
 		return null;
@@ -199,9 +197,6 @@ public class HttpClientDownloader implements Downloader {
 //			System.out.println("response content:"
 //					+ responseString.replace("\r\n", ""));
 //		}
-		PropertyConfigurator.configure("test.log");
-		Logger m_log = Logger.getLogger(HttpClientDownloader.class);
-		m_log.debug("hello world");
 	}
 	
 	/**

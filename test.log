@@ -27,7 +27,7 @@ log4j.appender.STDOUT.layout.ConversionPattern = %5p (%F:%L) %m%n
  
 log4j.appender.FILE = org.apache.log4j.RollingFileAppender
  
-log4j.appender.FILE.File = output.log
+log4j.appender.FILE.File = ./log/output.log
  
 log4j.appender.FILE.MaxFileSize = 2000KB
  
@@ -36,3 +36,4 @@ log4j.appender.FILE.MaxBackupIndex = 5
 log4j.appender.FILE.layout = org.apache.log4j.PatternLayout
  
 log4j.appender.FILE.layout.ConversionPattern = %d %-5p %c - %m%n
+

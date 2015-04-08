@@ -10,6 +10,7 @@ public class ParserTask implements Comparable<ParserTask>{
 	private static final String submissionListURL = ".*/submissions/$"; // 检验是否是题目提交列表页面
 	private static final String problemCodeURL = ".*/submissions/detail/.*"; // 检验是否是题目代码页面
 	private static final String problemListURL = ".*/problemset/algorithms/$"; // 检验是否是题目列表页面
+	private static final String problemDescription = ".*/problems/.*";
 	private Logger myLog;
 	
 	/**
@@ -21,7 +22,7 @@ public class ParserTask implements Comparable<ParserTask>{
 	 *
 	 */
 	static enum TaskType {
-		GET_PROBLEM_LIST_URL, GET_SUBMISION_URL, GET_CODE_URL, GET_CODE
+		PROBLEM_URL, SUBMISION_URL, CODE_PAGE_URL
 	}
 
 	private String url;
@@ -71,14 +72,15 @@ public class ParserTask implements Comparable<ParserTask>{
 	 * @since  1.0.0
 	 */
 	public void isType() {
-		if (checkPattern(url, problemListURL)) {
-			type = TaskType.GET_PROBLEM_LIST_URL;
+		if (checkPattern(url, submissionListURL)) {
+			myLog.debug("设定task类型为SUBMISION_URL");
+			type = TaskType.SUBMISION_URL;
 		} else if (checkPattern(url, problemCodeURL)) {
-			type = TaskType.GET_CODE_URL;
-		} else if (checkPattern(url, submissionListURL)) {
-			type = TaskType.GET_SUBMISION_URL;
+			myLog.debug("设定task类型为CODE_PAGE_URL");
+			type = TaskType.CODE_PAGE_URL;
 		} else {
-			type = TaskType.GET_CODE;
+			myLog.debug("设定task类型为PROBLEM_URL");
+			type = TaskType.PROBLEM_URL;
 		}
 	}
 
@@ -103,6 +105,6 @@ public class ParserTask implements Comparable<ParserTask>{
 	 * 复写Comparable接口方法
 	 */
 	public int compareTo(ParserTask o) {
-		return o.type.ordinal()-this.type.ordinal();
+		return this.type.ordinal()-o.type.ordinal();
 	}
 }
