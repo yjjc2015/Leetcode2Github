@@ -23,5 +23,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/org.json-20120521.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
