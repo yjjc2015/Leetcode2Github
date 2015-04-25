@@ -38,9 +38,11 @@ public class MultiSpider {
 		Future future = service.submit(new Callable() {
 
 			public Object call() throws Exception {
-				myLog.debug("进入Executors模块，准备进入taskProcceed方法");
-				scheduler.taskProcceed();
-				return null;
+				while (true) {
+					myLog.debug("进入Executors模块，准备进入taskProcceed方法");
+					scheduler.taskProcceed();
+					return null;
+				}
 			}
 			
 		});

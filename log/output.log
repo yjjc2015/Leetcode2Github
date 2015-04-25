@@ -5023,3 +5023,1053 @@
 2015-04-08 05:54:00,142 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/binary-tree-right-side-view/
 2015-04-08 05:54:00,142 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
 2015-04-08 05:54:00,143 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/binary-tree-right-side-view/进行解析
+2015-04-24 14:19:54,783 DEBUG MultiSpider - 开始创建MultiSpider
+2015-04-24 14:19:57,601 DEBUG downloader.HttpClientDownloader - 第一次登录，试图获取cookie值，response状态为：HTTP/1.1 200 OK
+2015-04-24 14:19:58,756 DEBUG downloader.HttpClientDownloader - 试图登录leetcode网站， response状态为： HTTP/1.1 200 OK
+2015-04-24 14:19:58,757 DEBUG downloader.HttpClientDownloader - HttpClientDownloader初始化完成
+2015-04-24 14:19:58,762 DEBUG scheduler.DispatchScheduler - 进入startProcess，试图初始化task queue
+2015-04-24 14:19:58,762 DEBUG downloader.HttpClientDownloader - 尝试获取问题列表
+2015-04-24 14:19:58,762 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://www.leetcode.com/problemset/algorithms/进行解析
+2015-04-24 14:20:00,560 DEBUG downloader.HttpClientDownloader - 正在对https://www.leetcode.com/problemset/algorithms/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-24 14:20:00,561 DEBUG downloader.HttpClientDownloader - 试图对https://www.leetcode.com/problemset/algorithms/进行解析，其中pattern为：//table[@class='table table-striped table-centered']/tbody/tr/td/a/@href
+2015-04-24 14:20:00,867 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/remove-linked-list-elements/
+2015-04-24 14:20:00,870 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,876 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/happy-number/
+2015-04-24 14:20:00,876 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,882 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/bitwise-and-of-numbers-range/
+2015-04-24 14:20:00,883 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,885 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/number-of-islands/
+2015-04-24 14:20:00,886 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,892 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-right-side-view/
+2015-04-24 14:20:00,896 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,898 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/house-robber/
+2015-04-24 14:20:00,899 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,901 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/number-of-1-bits/
+2015-04-24 14:20:00,902 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,904 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/reverse-bits/
+2015-04-24 14:20:00,904 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,906 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/rotate-array/
+2015-04-24 14:20:00,907 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,918 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
+2015-04-24 14:20:00,919 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,921 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/repeated-dna-sequences/
+2015-04-24 14:20:00,921 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,924 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/reverse-words-in-a-string-ii/
+2015-04-24 14:20:00,924 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,928 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/largest-number/
+2015-04-24 14:20:00,929 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,930 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/dungeon-game/
+2015-04-24 14:20:00,931 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,932 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-search-tree-iterator/
+2015-04-24 14:20:00,933 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,934 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/factorial-trailing-zeroes/
+2015-04-24 14:20:00,934 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,936 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/excel-sheet-column-number/
+2015-04-24 14:20:00,937 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,938 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/two-sum-iii-data-structure-design/
+2015-04-24 14:20:00,938 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,940 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/majority-element/
+2015-04-24 14:20:00,940 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,950 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/excel-sheet-column-title/
+2015-04-24 14:20:00,950 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,951 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+2015-04-24 14:20:00,952 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,953 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/fraction-to-recurring-decimal/
+2015-04-24 14:20:00,954 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,955 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/compare-version-numbers/
+2015-04-24 14:20:00,955 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,957 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/maximum-gap/
+2015-04-24 14:20:00,957 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,958 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/missing-ranges/
+2015-04-24 14:20:00,958 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,959 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/find-peak-element/
+2015-04-24 14:20:00,960 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,960 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/one-edit-distance/
+2015-04-24 14:20:00,961 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,962 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/intersection-of-two-linked-lists/
+2015-04-24 14:20:00,962 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,963 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
+2015-04-24 14:20:00,964 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,965 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/
+2015-04-24 14:20:00,965 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,966 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/read-n-characters-given-read4/
+2015-04-24 14:20:00,966 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,967 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-upside-down/
+2015-04-24 14:20:00,968 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,969 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/min-stack/
+2015-04-24 14:20:00,969 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,971 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/
+2015-04-24 14:20:00,971 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,972 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+2015-04-24 14:20:00,972 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,973 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/maximum-product-subarray/
+2015-04-24 14:20:00,974 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,975 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/reverse-words-in-a-string/
+2015-04-24 14:20:00,975 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,977 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/evaluate-reverse-polish-notation/
+2015-04-24 14:20:00,977 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,978 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/max-points-on-a-line/
+2015-04-24 14:20:00,979 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,980 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/sort-list/
+2015-04-24 14:20:00,980 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,981 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/insertion-sort-list/
+2015-04-24 14:20:00,982 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,983 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/lru-cache/
+2015-04-24 14:20:00,983 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,984 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-postorder-traversal/
+2015-04-24 14:20:00,985 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,986 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-preorder-traversal/
+2015-04-24 14:20:00,986 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,987 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/reorder-list/
+2015-04-24 14:20:00,987 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,988 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/linked-list-cycle-ii/
+2015-04-24 14:20:00,988 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,989 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/linked-list-cycle/
+2015-04-24 14:20:00,989 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,990 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/word-break-ii/
+2015-04-24 14:20:00,990 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,991 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/word-break/
+2015-04-24 14:20:00,991 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,992 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/copy-list-with-random-pointer/
+2015-04-24 14:20:00,993 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,995 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/single-number-ii/
+2015-04-24 14:20:00,995 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,996 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/single-number/
+2015-04-24 14:20:00,997 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,998 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/candy/
+2015-04-24 14:20:00,998 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:00,999 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/gas-station/
+2015-04-24 14:20:01,000 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,001 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/clone-graph/
+2015-04-24 14:20:01,001 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,003 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/palindrome-partitioning-ii/
+2015-04-24 14:20:01,003 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,004 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/palindrome-partitioning/
+2015-04-24 14:20:01,004 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,005 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/surrounded-regions/
+2015-04-24 14:20:01,005 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,006 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/sum-root-to-leaf-numbers/
+2015-04-24 14:20:01,006 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,008 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/longest-consecutive-sequence/
+2015-04-24 14:20:01,008 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,010 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/word-ladder/
+2015-04-24 14:20:01,010 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,011 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/word-ladder-ii/
+2015-04-24 14:20:01,012 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,013 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/valid-palindrome/
+2015-04-24 14:20:01,013 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,014 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-maximum-path-sum/
+2015-04-24 14:20:01,014 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,015 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+2015-04-24 14:20:01,016 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,017 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+2015-04-24 14:20:01,017 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,018 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+2015-04-24 14:20:01,018 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,019 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/triangle/
+2015-04-24 14:20:01,019 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,020 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/pascals-triangle-ii/
+2015-04-24 14:20:01,021 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,041 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/pascals-triangle/
+2015-04-24 14:20:01,042 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,044 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
+2015-04-24 14:20:01,046 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,048 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+2015-04-24 14:20:01,048 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,049 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/distinct-subsequences/
+2015-04-24 14:20:01,050 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,051 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
+2015-04-24 14:20:01,051 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,052 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/path-sum-ii/
+2015-04-24 14:20:01,052 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,054 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/path-sum/
+2015-04-24 14:20:01,054 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,055 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/minimum-depth-of-binary-tree/
+2015-04-24 14:20:01,055 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,056 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/balanced-binary-tree/
+2015-04-24 14:20:01,057 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,058 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/
+2015-04-24 14:20:01,058 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,059 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+2015-04-24 14:20:01,059 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,060 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
+2015-04-24 14:20:01,061 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,062 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
+2015-04-24 14:20:01,062 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,063 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+2015-04-24 14:20:01,063 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,064 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/maximum-depth-of-binary-tree/
+2015-04-24 14:20:01,064 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,065 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
+2015-04-24 14:20:01,065 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,066 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-level-order-traversal/
+2015-04-24 14:20:01,066 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,067 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/symmetric-tree/
+2015-04-24 14:20:01,067 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,067 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/same-tree/
+2015-04-24 14:20:01,068 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,069 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/recover-binary-search-tree/
+2015-04-24 14:20:01,069 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,070 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/validate-binary-search-tree/
+2015-04-24 14:20:01,070 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,071 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/interleaving-string/
+2015-04-24 14:20:01,071 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,072 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/unique-binary-search-trees/
+2015-04-24 14:20:01,072 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,073 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/unique-binary-search-trees-ii/
+2015-04-24 14:20:01,074 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,075 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-inorder-traversal/
+2015-04-24 14:20:01,075 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,076 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/restore-ip-addresses/
+2015-04-24 14:20:01,076 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,077 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/reverse-linked-list-ii/
+2015-04-24 14:20:01,078 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,079 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/decode-ways/
+2015-04-24 14:20:01,079 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,080 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/subsets-ii/
+2015-04-24 14:20:01,080 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,081 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/gray-code/
+2015-04-24 14:20:01,081 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,082 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/merge-sorted-array/
+2015-04-24 14:20:01,082 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,083 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/scramble-string/
+2015-04-24 14:20:01,084 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,085 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/partition-list/
+2015-04-24 14:20:01,085 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,086 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/maximal-rectangle/
+2015-04-24 14:20:01,086 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,088 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/largest-rectangle-in-histogram/
+2015-04-24 14:20:01,088 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,089 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+2015-04-24 14:20:01,089 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,090 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
+2015-04-24 14:20:01,091 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,092 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
+2015-04-24 14:20:01,092 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,093 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
+2015-04-24 14:20:01,094 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,095 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/word-search/
+2015-04-24 14:20:01,095 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,096 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/subsets/
+2015-04-24 14:20:01,097 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,098 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/combinations/
+2015-04-24 14:20:01,098 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,099 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/minimum-window-substring/
+2015-04-24 14:20:01,099 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,100 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/sort-colors/
+2015-04-24 14:20:01,101 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,102 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/search-a-2d-matrix/
+2015-04-24 14:20:01,102 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,103 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/set-matrix-zeroes/
+2015-04-24 14:20:01,104 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,105 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/edit-distance/
+2015-04-24 14:20:01,105 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,106 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/simplify-path/
+2015-04-24 14:20:01,107 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,108 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/climbing-stairs/
+2015-04-24 14:20:01,108 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,109 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/sqrtx/
+2015-04-24 14:20:01,110 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,111 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/text-justification/
+2015-04-24 14:20:01,111 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,112 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/add-binary/
+2015-04-24 14:20:01,112 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,114 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/plus-one/
+2015-04-24 14:20:01,114 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,115 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/valid-number/
+2015-04-24 14:20:01,115 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,117 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/minimum-path-sum/
+2015-04-24 14:20:01,117 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,119 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/unique-paths-ii/
+2015-04-24 14:20:01,119 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,120 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/unique-paths/
+2015-04-24 14:20:01,121 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,122 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/rotate-list/
+2015-04-24 14:20:01,122 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,123 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/permutation-sequence/
+2015-04-24 14:20:01,123 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,124 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/spiral-matrix-ii/
+2015-04-24 14:20:01,125 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,126 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/length-of-last-word/
+2015-04-24 14:20:01,126 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,127 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/insert-interval/
+2015-04-24 14:20:01,127 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,128 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/merge-intervals/
+2015-04-24 14:20:01,128 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,129 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/jump-game/
+2015-04-24 14:20:01,130 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,131 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/spiral-matrix/
+2015-04-24 14:20:01,131 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,134 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/maximum-subarray/
+2015-04-24 14:20:01,135 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,136 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/n-queens-ii/
+2015-04-24 14:20:01,136 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,137 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/n-queens/
+2015-04-24 14:20:01,138 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,139 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/powx-n/
+2015-04-24 14:20:01,139 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,141 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/anagrams/
+2015-04-24 14:20:01,141 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,142 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/rotate-image/
+2015-04-24 14:20:01,142 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,143 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/permutations-ii/
+2015-04-24 14:20:01,144 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,145 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/permutations/
+2015-04-24 14:20:01,145 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,146 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/jump-game-ii/
+2015-04-24 14:20:01,147 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,148 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/wildcard-matching/
+2015-04-24 14:20:01,148 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,149 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/multiply-strings/
+2015-04-24 14:20:01,149 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,150 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/trapping-rain-water/
+2015-04-24 14:20:01,150 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,151 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/first-missing-positive/
+2015-04-24 14:20:01,152 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,152 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/combination-sum-ii/
+2015-04-24 14:20:01,153 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,154 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/combination-sum/
+2015-04-24 14:20:01,154 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,155 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/count-and-say/
+2015-04-24 14:20:01,155 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,156 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/sudoku-solver/
+2015-04-24 14:20:01,157 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,157 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/valid-sudoku/
+2015-04-24 14:20:01,158 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,159 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/search-insert-position/
+2015-04-24 14:20:01,159 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,160 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/search-for-a-range/
+2015-04-24 14:20:01,160 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,161 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/search-in-rotated-sorted-array/
+2015-04-24 14:20:01,161 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,162 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/longest-valid-parentheses/
+2015-04-24 14:20:01,163 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,163 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/next-permutation/
+2015-04-24 14:20:01,164 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,165 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/substring-with-concatenation-of-all-words/
+2015-04-24 14:20:01,165 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,166 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/divide-two-integers/
+2015-04-24 14:20:01,166 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,167 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/implement-strstr/
+2015-04-24 14:20:01,167 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,168 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/remove-element/
+2015-04-24 14:20:01,169 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,170 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+2015-04-24 14:20:01,170 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,171 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/reverse-nodes-in-k-group/
+2015-04-24 14:20:01,171 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,172 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/swap-nodes-in-pairs/
+2015-04-24 14:20:01,172 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,173 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/merge-k-sorted-lists/
+2015-04-24 14:20:01,174 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,175 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/generate-parentheses/
+2015-04-24 14:20:01,175 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,176 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/merge-two-sorted-lists/
+2015-04-24 14:20:01,176 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,177 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/valid-parentheses/
+2015-04-24 14:20:01,178 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,179 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+2015-04-24 14:20:01,179 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,180 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/4sum/
+2015-04-24 14:20:01,180 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,181 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+2015-04-24 14:20:01,182 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,183 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/3sum-closest/
+2015-04-24 14:20:01,183 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,184 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/3sum/
+2015-04-24 14:20:01,184 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,185 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/longest-common-prefix/
+2015-04-24 14:20:01,186 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,187 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/roman-to-integer/
+2015-04-24 14:20:01,187 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,188 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/integer-to-roman/
+2015-04-24 14:20:01,188 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,189 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/container-with-most-water/
+2015-04-24 14:20:01,189 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,190 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/regular-expression-matching/
+2015-04-24 14:20:01,191 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,192 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/palindrome-number/
+2015-04-24 14:20:01,192 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,193 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/string-to-integer-atoi/
+2015-04-24 14:20:01,193 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,194 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/reverse-integer/
+2015-04-24 14:20:01,195 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,196 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/zigzag-conversion/
+2015-04-24 14:20:01,196 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,197 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/longest-palindromic-substring/
+2015-04-24 14:20:01,197 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,198 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/median-of-two-sorted-arrays/
+2015-04-24 14:20:01,199 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,199 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/longest-substring-without-repeating-characters/
+2015-04-24 14:20:01,200 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,201 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/add-two-numbers/
+2015-04-24 14:20:01,201 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,202 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/two-sum/
+2015-04-24 14:20:01,202 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-24 14:20:01,202 DEBUG MultiSpider - MultiSpider创建完毕
+2015-04-24 14:20:01,203 DEBUG MultiSpider - 正式开始爬虫
+2015-04-24 14:20:01,214 DEBUG MultiSpider - 进入Executors模块，准备进入taskProcceed方法
+2015-04-24 14:20:01,216 DEBUG scheduler.DispatchScheduler - 进入task任务处理
+2015-04-24 14:20:01,217 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-24 14:20:01,217 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-24 14:20:01,217 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/remove-linked-list-elements/
+2015-04-24 14:20:01,217 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-24 14:20:01,218 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/remove-linked-list-elements/进行解析
+2015-04-24 14:20:01,524 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/remove-linked-list-elements/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-24 14:20:01,524 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/remove-linked-list-elements/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-24 14:20:01,551 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/remove-linked-list-elements/submissions/
+2015-04-24 14:20:01,552 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-24 14:20:01,552 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-24 14:20:01,552 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-24 14:20:01,552 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/two-sum/
+2015-04-24 14:20:01,553 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-24 14:20:01,553 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/two-sum/进行解析
+2015-04-24 14:20:01,864 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/two-sum/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-24 14:20:01,864 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/two-sum/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-24 14:20:01,876 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/two-sum/submissions/
+2015-04-24 14:20:01,876 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-24 14:20:01,876 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-24 14:20:01,877 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-24 14:20:01,877 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/happy-number/
+2015-04-24 14:20:01,877 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-24 14:20:01,877 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/happy-number/进行解析
+2015-04-24 14:20:02,168 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/happy-number/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-24 14:20:02,169 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/happy-number/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-24 14:20:02,183 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/happy-number/submissions/
+2015-04-24 14:20:02,183 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-24 14:20:02,183 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-24 14:20:02,184 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-24 14:20:02,184 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/number-of-islands/
+2015-04-24 14:20:02,184 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-24 14:20:02,184 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/number-of-islands/进行解析
+2015-04-24 14:20:02,472 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/number-of-islands/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-24 14:20:02,472 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/number-of-islands/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-24 14:20:02,485 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/number-of-islands/submissions/
+2015-04-24 14:20:02,485 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-24 14:20:02,486 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-24 14:20:02,486 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-24 14:20:02,486 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/reverse-bits/
+2015-04-24 14:20:02,486 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-24 14:20:02,486 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/reverse-bits/进行解析
+2015-04-24 14:20:02,772 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/reverse-bits/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-24 14:20:02,773 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/reverse-bits/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-24 14:20:02,783 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/reverse-bits/submissions/
+2015-04-24 14:20:02,784 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-24 14:20:02,784 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-24 14:20:02,784 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-24 14:20:02,784 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/factorial-trailing-zeroes/
+2015-04-24 14:20:02,785 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-24 14:20:02,785 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/factorial-trailing-zeroes/进行解析
+2015-04-24 14:20:03,078 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/factorial-trailing-zeroes/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-24 14:20:03,078 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/factorial-trailing-zeroes/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-24 14:20:03,088 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/factorial-trailing-zeroes/submissions/
+2015-04-24 14:20:03,089 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-24 14:20:03,089 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-24 14:20:03,089 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-24 14:20:03,089 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/binary-tree-upside-down/
+2015-04-24 14:20:03,090 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-24 14:20:03,090 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/binary-tree-upside-down/进行解析
+2015-04-24 14:20:03,615 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/binary-tree-upside-down/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-24 14:20:03,615 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/binary-tree-upside-down/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-24 14:20:03,634 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-24 14:20:03,634 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-24 14:20:03,635 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/binary-tree-maximum-path-sum/
+2015-04-24 14:20:03,635 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-24 14:20:03,635 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/binary-tree-maximum-path-sum/进行解析
+2015-04-24 14:20:03,940 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/binary-tree-maximum-path-sum/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-24 14:20:03,940 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/binary-tree-maximum-path-sum/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-24 14:20:03,958 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-maximum-path-sum/submissions/
+2015-04-24 14:20:03,958 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-24 14:20:03,958 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-24 14:20:03,958 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-24 14:20:03,959 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/add-two-numbers/
+2015-04-24 14:20:03,959 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-24 14:20:03,959 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/add-two-numbers/进行解析
+2015-04-24 14:20:04,236 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/add-two-numbers/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-24 14:20:04,236 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/add-two-numbers/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-24 14:20:04,245 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/add-two-numbers/submissions/
+2015-04-24 14:20:04,245 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-24 14:20:04,246 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-24 14:20:04,246 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-24 14:20:04,246 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/permutation-sequence/
+2015-04-24 14:20:04,246 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-24 14:20:04,246 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/permutation-sequence/进行解析
+2015-04-24 14:20:04,532 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/permutation-sequence/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-24 14:20:04,532 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/permutation-sequence/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-24 14:20:04,541 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/permutation-sequence/submissions/
+2015-04-24 14:20:04,542 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-24 14:20:04,542 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-24 14:20:04,542 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-24 14:20:04,542 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/spiral-matrix-ii/
+2015-04-24 14:20:04,542 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-24 14:20:04,543 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/spiral-matrix-ii/进行解析
+2015-04-25 00:59:45,771 DEBUG MultiSpider - 开始创建MultiSpider
+2015-04-25 00:59:49,224 DEBUG downloader.HttpClientDownloader - 第一次登录，试图获取cookie值，response状态为：HTTP/1.1 200 OK
+2015-04-25 00:59:50,194 DEBUG downloader.HttpClientDownloader - 试图登录leetcode网站， response状态为： HTTP/1.1 200 OK
+2015-04-25 00:59:50,195 DEBUG downloader.HttpClientDownloader - HttpClientDownloader初始化完成
+2015-04-25 00:59:50,235 DEBUG scheduler.DispatchScheduler - 进入startProcess，试图初始化task queue
+2015-04-25 00:59:50,236 DEBUG downloader.HttpClientDownloader - 尝试获取问题列表
+2015-04-25 00:59:50,237 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://www.leetcode.com/problemset/algorithms/进行解析
+2015-04-25 00:59:52,373 DEBUG downloader.HttpClientDownloader - 正在对https://www.leetcode.com/problemset/algorithms/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 00:59:52,373 DEBUG downloader.HttpClientDownloader - 试图对https://www.leetcode.com/problemset/algorithms/进行解析，其中pattern为：//table[@class='table table-striped table-centered']/tbody/tr/td/a/@href
+2015-04-25 00:59:52,751 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/remove-linked-list-elements/
+2015-04-25 00:59:52,752 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,755 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/happy-number/
+2015-04-25 00:59:52,755 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,757 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/bitwise-and-of-numbers-range/
+2015-04-25 00:59:52,757 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,759 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/number-of-islands/
+2015-04-25 00:59:52,760 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,763 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-right-side-view/
+2015-04-25 00:59:52,764 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,765 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/house-robber/
+2015-04-25 00:59:52,766 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,768 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/number-of-1-bits/
+2015-04-25 00:59:52,768 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,770 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/reverse-bits/
+2015-04-25 00:59:52,771 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,773 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/rotate-array/
+2015-04-25 00:59:52,773 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,775 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
+2015-04-25 00:59:52,776 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,777 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/repeated-dna-sequences/
+2015-04-25 00:59:52,778 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,780 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/reverse-words-in-a-string-ii/
+2015-04-25 00:59:52,789 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,792 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/largest-number/
+2015-04-25 00:59:52,792 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,793 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/dungeon-game/
+2015-04-25 00:59:52,794 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,795 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-search-tree-iterator/
+2015-04-25 00:59:52,795 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,797 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/factorial-trailing-zeroes/
+2015-04-25 00:59:52,797 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,798 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/excel-sheet-column-number/
+2015-04-25 00:59:52,799 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,800 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/two-sum-iii-data-structure-design/
+2015-04-25 00:59:52,801 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,802 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/majority-element/
+2015-04-25 00:59:52,803 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,804 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/excel-sheet-column-title/
+2015-04-25 00:59:52,804 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,805 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+2015-04-25 00:59:52,806 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,807 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/fraction-to-recurring-decimal/
+2015-04-25 00:59:52,807 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,809 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/compare-version-numbers/
+2015-04-25 00:59:52,809 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,810 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/maximum-gap/
+2015-04-25 00:59:52,811 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,812 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/missing-ranges/
+2015-04-25 00:59:52,813 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,814 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/find-peak-element/
+2015-04-25 00:59:52,814 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,816 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/one-edit-distance/
+2015-04-25 00:59:52,816 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,817 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/intersection-of-two-linked-lists/
+2015-04-25 00:59:52,818 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,819 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
+2015-04-25 00:59:52,820 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,821 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/
+2015-04-25 00:59:52,821 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,823 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/read-n-characters-given-read4/
+2015-04-25 00:59:52,823 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,824 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-upside-down/
+2015-04-25 00:59:52,825 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,826 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/min-stack/
+2015-04-25 00:59:52,826 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,828 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/
+2015-04-25 00:59:52,828 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,829 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+2015-04-25 00:59:52,830 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,831 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/maximum-product-subarray/
+2015-04-25 00:59:52,832 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,833 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/reverse-words-in-a-string/
+2015-04-25 00:59:52,833 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,834 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/evaluate-reverse-polish-notation/
+2015-04-25 00:59:52,835 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,836 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/max-points-on-a-line/
+2015-04-25 00:59:52,837 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,838 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/sort-list/
+2015-04-25 00:59:52,838 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,839 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/insertion-sort-list/
+2015-04-25 00:59:52,840 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,841 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/lru-cache/
+2015-04-25 00:59:52,841 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,842 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-postorder-traversal/
+2015-04-25 00:59:52,843 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,844 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-preorder-traversal/
+2015-04-25 00:59:52,844 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,846 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/reorder-list/
+2015-04-25 00:59:52,846 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,847 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/linked-list-cycle-ii/
+2015-04-25 00:59:52,848 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,849 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/linked-list-cycle/
+2015-04-25 00:59:52,850 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,851 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/word-break-ii/
+2015-04-25 00:59:52,852 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,854 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/word-break/
+2015-04-25 00:59:52,854 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,857 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/copy-list-with-random-pointer/
+2015-04-25 00:59:52,857 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,859 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/single-number-ii/
+2015-04-25 00:59:52,859 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,860 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/single-number/
+2015-04-25 00:59:52,861 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,862 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/candy/
+2015-04-25 00:59:52,862 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,864 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/gas-station/
+2015-04-25 00:59:52,864 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,865 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/clone-graph/
+2015-04-25 00:59:52,865 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,867 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/palindrome-partitioning-ii/
+2015-04-25 00:59:52,867 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,868 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/palindrome-partitioning/
+2015-04-25 00:59:52,869 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,870 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/surrounded-regions/
+2015-04-25 00:59:52,870 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,871 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/sum-root-to-leaf-numbers/
+2015-04-25 00:59:52,872 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,873 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/longest-consecutive-sequence/
+2015-04-25 00:59:52,873 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,875 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/word-ladder/
+2015-04-25 00:59:52,875 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,876 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/word-ladder-ii/
+2015-04-25 00:59:52,877 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,878 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/valid-palindrome/
+2015-04-25 00:59:52,878 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,879 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-maximum-path-sum/
+2015-04-25 00:59:52,880 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,901 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+2015-04-25 00:59:52,902 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,903 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+2015-04-25 00:59:52,903 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,905 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+2015-04-25 00:59:52,905 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,906 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/triangle/
+2015-04-25 00:59:52,906 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,908 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/pascals-triangle-ii/
+2015-04-25 00:59:52,908 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,909 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/pascals-triangle/
+2015-04-25 00:59:52,909 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,915 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
+2015-04-25 00:59:52,916 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,917 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+2015-04-25 00:59:52,917 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,919 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/distinct-subsequences/
+2015-04-25 00:59:52,921 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,922 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
+2015-04-25 00:59:52,923 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,924 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/path-sum-ii/
+2015-04-25 00:59:52,935 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,937 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/path-sum/
+2015-04-25 00:59:52,938 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,939 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/minimum-depth-of-binary-tree/
+2015-04-25 00:59:52,947 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,949 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/balanced-binary-tree/
+2015-04-25 00:59:52,949 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,950 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/
+2015-04-25 00:59:52,951 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,952 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+2015-04-25 00:59:52,952 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,954 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
+2015-04-25 00:59:52,954 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,955 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
+2015-04-25 00:59:52,956 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,957 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+2015-04-25 00:59:52,962 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,963 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/maximum-depth-of-binary-tree/
+2015-04-25 00:59:52,964 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,965 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
+2015-04-25 00:59:52,965 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,969 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-level-order-traversal/
+2015-04-25 00:59:52,969 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,971 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/symmetric-tree/
+2015-04-25 00:59:52,971 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,972 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/same-tree/
+2015-04-25 00:59:52,972 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,973 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/recover-binary-search-tree/
+2015-04-25 00:59:52,974 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,975 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/validate-binary-search-tree/
+2015-04-25 00:59:52,975 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,984 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/interleaving-string/
+2015-04-25 00:59:52,984 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,986 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/unique-binary-search-trees/
+2015-04-25 00:59:52,986 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,987 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/unique-binary-search-trees-ii/
+2015-04-25 00:59:52,988 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,989 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-inorder-traversal/
+2015-04-25 00:59:52,989 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:52,990 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/restore-ip-addresses/
+2015-04-25 00:59:53,004 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,006 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/reverse-linked-list-ii/
+2015-04-25 00:59:53,006 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,007 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/decode-ways/
+2015-04-25 00:59:53,017 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,021 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/subsets-ii/
+2015-04-25 00:59:53,021 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,023 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/gray-code/
+2015-04-25 00:59:53,023 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,024 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/merge-sorted-array/
+2015-04-25 00:59:53,024 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,025 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/scramble-string/
+2015-04-25 00:59:53,026 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,027 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/partition-list/
+2015-04-25 00:59:53,027 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,028 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/maximal-rectangle/
+2015-04-25 00:59:53,028 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,030 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/largest-rectangle-in-histogram/
+2015-04-25 00:59:53,030 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,031 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+2015-04-25 00:59:53,031 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,032 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
+2015-04-25 00:59:53,033 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,034 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
+2015-04-25 00:59:53,034 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,035 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
+2015-04-25 00:59:53,035 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,036 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/word-search/
+2015-04-25 00:59:53,037 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,037 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/subsets/
+2015-04-25 00:59:53,038 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,039 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/combinations/
+2015-04-25 00:59:53,039 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,040 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/minimum-window-substring/
+2015-04-25 00:59:53,040 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,042 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/sort-colors/
+2015-04-25 00:59:53,042 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,043 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/search-a-2d-matrix/
+2015-04-25 00:59:53,044 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,045 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/set-matrix-zeroes/
+2015-04-25 00:59:53,045 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,046 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/edit-distance/
+2015-04-25 00:59:53,046 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,048 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/simplify-path/
+2015-04-25 00:59:53,048 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,049 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/climbing-stairs/
+2015-04-25 00:59:53,050 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,051 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/sqrtx/
+2015-04-25 00:59:53,051 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,052 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/text-justification/
+2015-04-25 00:59:53,052 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,054 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/add-binary/
+2015-04-25 00:59:53,054 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,056 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/plus-one/
+2015-04-25 00:59:53,056 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,057 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/valid-number/
+2015-04-25 00:59:53,057 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,059 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/minimum-path-sum/
+2015-04-25 00:59:53,063 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,067 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/unique-paths-ii/
+2015-04-25 00:59:53,067 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,068 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/unique-paths/
+2015-04-25 00:59:53,069 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,070 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/rotate-list/
+2015-04-25 00:59:53,070 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,071 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/permutation-sequence/
+2015-04-25 00:59:53,072 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,073 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/spiral-matrix-ii/
+2015-04-25 00:59:53,073 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,074 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/length-of-last-word/
+2015-04-25 00:59:53,074 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,079 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/insert-interval/
+2015-04-25 00:59:53,080 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,080 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/merge-intervals/
+2015-04-25 00:59:53,080 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,081 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/jump-game/
+2015-04-25 00:59:53,081 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,082 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/spiral-matrix/
+2015-04-25 00:59:53,082 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,082 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/maximum-subarray/
+2015-04-25 00:59:53,083 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,084 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/n-queens-ii/
+2015-04-25 00:59:53,084 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,085 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/n-queens/
+2015-04-25 00:59:53,085 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,086 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/powx-n/
+2015-04-25 00:59:53,086 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,087 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/anagrams/
+2015-04-25 00:59:53,087 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,088 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/rotate-image/
+2015-04-25 00:59:53,088 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,092 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/permutations-ii/
+2015-04-25 00:59:53,092 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,093 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/permutations/
+2015-04-25 00:59:53,094 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,097 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/jump-game-ii/
+2015-04-25 00:59:53,098 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,099 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/wildcard-matching/
+2015-04-25 00:59:53,099 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,100 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/multiply-strings/
+2015-04-25 00:59:53,101 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,102 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/trapping-rain-water/
+2015-04-25 00:59:53,102 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,103 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/first-missing-positive/
+2015-04-25 00:59:53,104 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,105 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/combination-sum-ii/
+2015-04-25 00:59:53,105 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,111 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/combination-sum/
+2015-04-25 00:59:53,112 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,113 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/count-and-say/
+2015-04-25 00:59:53,113 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,114 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/sudoku-solver/
+2015-04-25 00:59:53,114 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,116 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/valid-sudoku/
+2015-04-25 00:59:53,116 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,117 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/search-insert-position/
+2015-04-25 00:59:53,117 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,118 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/search-for-a-range/
+2015-04-25 00:59:53,119 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,120 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/search-in-rotated-sorted-array/
+2015-04-25 00:59:53,120 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,121 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/longest-valid-parentheses/
+2015-04-25 00:59:53,121 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,122 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/next-permutation/
+2015-04-25 00:59:53,123 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,124 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/substring-with-concatenation-of-all-words/
+2015-04-25 00:59:53,124 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,125 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/divide-two-integers/
+2015-04-25 00:59:53,125 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,128 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/implement-strstr/
+2015-04-25 00:59:53,128 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,129 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/remove-element/
+2015-04-25 00:59:53,129 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,130 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+2015-04-25 00:59:53,131 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,132 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/reverse-nodes-in-k-group/
+2015-04-25 00:59:53,132 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,133 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/swap-nodes-in-pairs/
+2015-04-25 00:59:53,133 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,134 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/merge-k-sorted-lists/
+2015-04-25 00:59:53,134 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,135 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/generate-parentheses/
+2015-04-25 00:59:53,135 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,136 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/merge-two-sorted-lists/
+2015-04-25 00:59:53,136 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,137 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/valid-parentheses/
+2015-04-25 00:59:53,137 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,138 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+2015-04-25 00:59:53,139 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,140 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/4sum/
+2015-04-25 00:59:53,140 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,141 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+2015-04-25 00:59:53,141 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,142 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/3sum-closest/
+2015-04-25 00:59:53,143 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,144 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/3sum/
+2015-04-25 00:59:53,144 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,145 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/longest-common-prefix/
+2015-04-25 00:59:53,145 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,146 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/roman-to-integer/
+2015-04-25 00:59:53,146 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,147 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/integer-to-roman/
+2015-04-25 00:59:53,147 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,148 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/container-with-most-water/
+2015-04-25 00:59:53,148 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,149 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/regular-expression-matching/
+2015-04-25 00:59:53,150 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,151 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/palindrome-number/
+2015-04-25 00:59:53,151 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,152 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/string-to-integer-atoi/
+2015-04-25 00:59:53,152 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,153 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/reverse-integer/
+2015-04-25 00:59:53,154 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,155 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/zigzag-conversion/
+2015-04-25 00:59:53,155 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,156 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/longest-palindromic-substring/
+2015-04-25 00:59:53,156 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,157 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/median-of-two-sorted-arrays/
+2015-04-25 00:59:53,157 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,158 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/longest-substring-without-repeating-characters/
+2015-04-25 00:59:53,159 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,159 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/add-two-numbers/
+2015-04-25 00:59:53,160 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,161 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/two-sum/
+2015-04-25 00:59:53,161 DEBUG scheduler.ParserTask - 设定task类型为PROBLEM_URL
+2015-04-25 00:59:53,161 DEBUG MultiSpider - MultiSpider创建完毕
+2015-04-25 00:59:53,162 DEBUG MultiSpider - 正式开始爬虫
+2015-04-25 00:59:53,167 DEBUG MultiSpider - 进入Executors模块，准备进入taskProcceed方法
+2015-04-25 00:59:53,175 DEBUG scheduler.DispatchScheduler - 进入task任务处理
+2015-04-25 00:59:53,175 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 00:59:53,176 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 00:59:53,176 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/remove-linked-list-elements/
+2015-04-25 00:59:53,176 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 00:59:53,177 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/remove-linked-list-elements/进行解析
+2015-04-25 00:59:56,133 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/remove-linked-list-elements/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 00:59:56,133 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/remove-linked-list-elements/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 00:59:56,153 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/remove-linked-list-elements/submissions/
+2015-04-25 00:59:56,154 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 00:59:56,155 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 00:59:56,155 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 00:59:56,155 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/two-sum/
+2015-04-25 00:59:56,155 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 00:59:56,156 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/two-sum/进行解析
+2015-04-25 00:59:56,635 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/two-sum/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 00:59:56,635 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/two-sum/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 00:59:56,649 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/two-sum/submissions/
+2015-04-25 00:59:56,650 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 00:59:56,650 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 00:59:56,650 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 00:59:56,651 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/happy-number/
+2015-04-25 00:59:56,651 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 00:59:56,651 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/happy-number/进行解析
+2015-04-25 00:59:57,162 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/happy-number/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 00:59:57,162 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/happy-number/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 00:59:57,174 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/happy-number/submissions/
+2015-04-25 00:59:57,175 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 00:59:57,175 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 00:59:57,175 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 00:59:57,175 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/number-of-islands/
+2015-04-25 00:59:57,175 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 00:59:57,176 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/number-of-islands/进行解析
+2015-04-25 00:59:58,323 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/number-of-islands/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 00:59:58,324 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/number-of-islands/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 00:59:58,338 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/number-of-islands/submissions/
+2015-04-25 00:59:58,339 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 00:59:58,339 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 00:59:58,339 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 00:59:58,339 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/reverse-bits/
+2015-04-25 00:59:58,339 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 00:59:58,339 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/reverse-bits/进行解析
+2015-04-25 01:00:00,123 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/reverse-bits/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 01:00:00,123 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/reverse-bits/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 01:00:00,137 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/reverse-bits/submissions/
+2015-04-25 01:00:00,138 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 01:00:00,138 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 01:00:00,138 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 01:00:00,138 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/factorial-trailing-zeroes/
+2015-04-25 01:00:00,138 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 01:00:00,139 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/factorial-trailing-zeroes/进行解析
+2015-04-25 01:00:02,564 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/factorial-trailing-zeroes/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 01:00:02,564 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/factorial-trailing-zeroes/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 01:00:02,571 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/factorial-trailing-zeroes/submissions/
+2015-04-25 01:00:02,571 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 01:00:02,571 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 01:00:02,571 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 01:00:02,571 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/binary-tree-upside-down/
+2015-04-25 01:00:02,571 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 01:00:02,572 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/binary-tree-upside-down/进行解析
+2015-04-25 01:00:03,996 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/binary-tree-upside-down/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 01:00:03,996 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/binary-tree-upside-down/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 01:00:04,017 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 01:00:04,017 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 01:00:04,018 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/binary-tree-maximum-path-sum/
+2015-04-25 01:00:04,018 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 01:00:04,018 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/binary-tree-maximum-path-sum/进行解析
+2015-04-25 01:00:04,426 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/binary-tree-maximum-path-sum/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 01:00:04,427 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/binary-tree-maximum-path-sum/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 01:00:04,446 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/binary-tree-maximum-path-sum/submissions/
+2015-04-25 01:00:04,446 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 01:00:04,446 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 01:00:04,446 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 01:00:04,446 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/add-two-numbers/
+2015-04-25 01:00:04,447 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 01:00:04,447 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/add-two-numbers/进行解析
+2015-04-25 01:00:04,850 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/add-two-numbers/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 01:00:04,851 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/add-two-numbers/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 01:00:04,862 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/add-two-numbers/submissions/
+2015-04-25 01:00:04,863 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 01:00:04,863 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 01:00:04,863 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 01:00:04,863 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/permutation-sequence/
+2015-04-25 01:00:04,863 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 01:00:04,863 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/permutation-sequence/进行解析
+2015-04-25 01:00:05,298 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/permutation-sequence/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 01:00:05,298 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/permutation-sequence/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 01:00:05,306 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/permutation-sequence/submissions/
+2015-04-25 01:00:05,306 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 01:00:05,307 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 01:00:05,307 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 01:00:05,307 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/spiral-matrix-ii/
+2015-04-25 01:00:05,307 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 01:00:05,307 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/spiral-matrix-ii/进行解析
+2015-04-25 01:00:05,793 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/spiral-matrix-ii/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 01:00:05,793 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/spiral-matrix-ii/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 01:00:05,803 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/spiral-matrix-ii/submissions/
+2015-04-25 01:00:05,804 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 01:00:05,804 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 01:00:05,804 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 01:00:05,804 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+2015-04-25 01:00:05,805 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 01:00:05,805 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/进行解析
+2015-04-25 01:00:06,213 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 01:00:06,214 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 01:00:06,220 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/submissions/
+2015-04-25 01:00:06,221 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 01:00:06,221 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 01:00:06,221 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 01:00:06,221 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/length-of-last-word/
+2015-04-25 01:00:06,221 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 01:00:06,221 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/length-of-last-word/进行解析
+2015-04-25 01:00:07,199 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/length-of-last-word/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 01:00:07,199 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/length-of-last-word/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 01:00:07,212 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/length-of-last-word/submissions/
+2015-04-25 01:00:07,213 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 01:00:07,213 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 01:00:07,213 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 01:00:07,213 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/insert-interval/
+2015-04-25 01:00:07,213 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 01:00:07,213 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/insert-interval/进行解析
+2015-04-25 01:00:07,617 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/insert-interval/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 01:00:07,617 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/insert-interval/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 01:00:07,623 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/insert-interval/submissions/
+2015-04-25 01:00:07,623 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 01:00:07,623 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 01:00:07,624 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 01:00:07,624 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/min-stack/
+2015-04-25 01:00:07,624 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 01:00:07,624 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/min-stack/进行解析
+2015-04-25 01:00:10,275 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/min-stack/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 01:00:10,276 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/min-stack/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 01:00:10,282 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/min-stack/submissions/
+2015-04-25 01:00:10,282 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 01:00:10,283 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 01:00:10,283 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 01:00:10,283 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+2015-04-25 01:00:10,283 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 01:00:10,284 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/进行解析
+2015-04-25 01:00:10,695 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 01:00:10,695 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 01:00:10,702 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/submissions/
+2015-04-25 01:00:10,702 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 01:00:10,702 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 01:00:10,702 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 01:00:10,703 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/merge-intervals/
+2015-04-25 01:00:10,703 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 01:00:10,703 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/merge-intervals/进行解析
+2015-04-25 01:00:11,099 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/merge-intervals/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 01:00:11,100 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/merge-intervals/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 01:00:11,106 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/merge-intervals/submissions/
+2015-04-25 01:00:11,106 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 01:00:11,106 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 01:00:11,106 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 01:00:11,107 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/jump-game/
+2015-04-25 01:00:11,107 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 01:00:11,107 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/jump-game/进行解析
+2015-04-25 01:00:12,065 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/jump-game/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 01:00:12,065 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/jump-game/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 01:00:12,072 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/jump-game/submissions/
+2015-04-25 01:00:12,072 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 01:00:12,073 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 01:00:12,073 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 01:00:12,073 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+2015-04-25 01:00:12,073 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 01:00:12,073 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/best-time-to-buy-and-sell-stock/进行解析
+2015-04-25 01:00:15,026 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/best-time-to-buy-and-sell-stock/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 01:00:15,027 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/best-time-to-buy-and-sell-stock/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 01:00:15,035 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/
+2015-04-25 01:00:15,036 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 01:00:15,036 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 01:00:15,036 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 01:00:15,036 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/spiral-matrix/
+2015-04-25 01:00:15,036 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 01:00:15,036 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/spiral-matrix/进行解析
+2015-04-25 01:00:15,790 DEBUG downloader.HttpClientDownloader - 正在对https://leetcode.com/problems/spiral-matrix/进行访问，response状态为：HTTP/1.1 200 OK
+2015-04-25 01:00:15,790 DEBUG downloader.HttpClientDownloader - 试图对https://leetcode.com/problems/spiral-matrix/进行解析，其中pattern为：//div[@class='row']/div/div/a/@href
+2015-04-25 01:00:15,801 DEBUG scheduler.DispatchScheduler - 正在进行入栈操作，task的url为： https://leetcode.com/problems/spiral-matrix/submissions/
+2015-04-25 01:00:15,801 DEBUG scheduler.ParserTask - 设定task类型为SUBMISION_URL
+2015-04-25 01:00:15,801 DEBUG scheduler.DispatchScheduler - 处理了一个任务
+2015-04-25 01:00:15,802 DEBUG scheduler.DispatchScheduler - 取得的task的type类型为： PROBLEM_URL
+2015-04-25 01:00:15,802 DEBUG scheduler.DispatchScheduler - 正在获取问题提交列表，url为： https://leetcode.com/problems/maximum-subarray/
+2015-04-25 01:00:15,802 DEBUG downloader.HttpClientDownloader - 尝试获取问题提交记录列表
+2015-04-25 01:00:15,802 DEBUG downloader.HttpClientDownloader - 进入doDispatcher函数，准备对https://leetcode.com/problems/maximum-subarray/进行解析
