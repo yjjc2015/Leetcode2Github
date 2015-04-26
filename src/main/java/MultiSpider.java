@@ -1,4 +1,3 @@
-
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -18,7 +17,7 @@ public class MultiSpider {
 	private String password;
 	private static DispatchScheduler scheduler;
 	private static Logger myLog;
-	
+
 	public MultiSpider create(String username, String password) {
 		PropertyConfigurator.configure("test.log");
 		myLog = Logger.getLogger(MultiSpider.class);
@@ -35,26 +34,26 @@ public class MultiSpider {
 	public void run() {
 		myLog.debug("正式开始爬虫");
 		service = Executors.newFixedThreadPool(this.threadNum);
-		Future future = service.submit(new Callable() {
+		for (int i = 0; i < this.threadNum; i++) {
+			Future future = service.submit(new Callable() {
 
-			public Object call() throws Exception {
-				while (true) {
+				public Object call() throws Exception {
 					myLog.debug("进入Executors模块，准备进入taskProcceed方法");
 					scheduler.taskProcceed();
 					return null;
 				}
-			}
-			
-		});
+	
+			});
+		}
 	}
 
 	public MultiSpider thread(int num) {
 		this.threadNum = num;
 		return this;
 	}
-	
+
 	public static void main(String[] args) {
-		MultiSpider spider = new MultiSpider();
+		MultiSpider spider = new MultiSpider().thread(10);
 		spider.create("tanghaodong25@163.com", "***").run();
 	}
 }
