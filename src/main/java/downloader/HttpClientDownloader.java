@@ -138,7 +138,7 @@ public class HttpClientDownloader implements Downloader {
 	public List<String> codePageDownloader(String url, String pattern) {
 		myLog.debug("尝试获取代码");
 		//爬取代码
-		return null;
+		return doDispatcher(url, pattern);
 	}
 
 	/**

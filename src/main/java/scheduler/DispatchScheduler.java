@@ -1,21 +1,26 @@
 package scheduler;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
+import scheduler.ParserTask.TaskType;
 import container.Container;
+import container.Result;
 import downloader.HttpClientDownloader;
 
 public class DispatchScheduler implements Scheduler {
 	private HttpClientDownloader downloader = HttpClientDownloader.getInstance();;
 	private static BlockingQueue<ParserTask> queue = Container.getQueue();
+	private static List<String> res = Result.getResult();
 	private static final String problemLinkPath = "//table[@class='table table-striped table-centered']/tbody/tr/td/a/@href";				//进入问题描述 Xpath路径
 	private static final String getProblemLinkPath = "//table[@class='table table-striped table-centered']/tbody/tr/td/a/text()";				//得到题目名称Xpath路径
 	private static final String submissionLinkPath = "//div[@class='row']/div/div/a/@href";																		//进入题目提交页面Xpath路径
-	private static final String codePagePath = "//table[@id='result_testcases']/tbody/tr/td/a/@href";															//进入题目代码页面Xpath路径
+	private static final String codePagePath = "//a[@class='inline-wrap']/text()";   													  //进入题目代码页面Xpath路径
+																				
 //	private static final String codePageStatusPath = "//table[@id='result_testcases]/t"
 //																							+ "body/tr/td/a[@class='status-accepted text-success']/strong/text()";                     //题目提交状态Xpath路径
 //	private static final String codePageStatusPath = "//div[@class='row']/div/div/a/@href";
@@ -80,11 +85,13 @@ public class DispatchScheduler implements Scheduler {
 	 */
 	public void getDownloadResult(ParserTask task) throws InterruptedException {
 		if (task.getType().equals(ParserTask.TaskType.SUBMISION_URL)) {
-			myLog.debug("该任务为获取问题代码");
+			myLog.debug("该任务为获取问题代码页面");
 			List<String> list = downloader.problemDescriptionDownloader(task.getUrl(), codePageStatusPath);
 			setTask(list, task.getType());
 		} else if (task.getType().equals(ParserTask.TaskType.CODE_PAGE_URL)) {
-			//获取代码
+			myLog.debug("正在获取AC题目名称，url为： " + task.getUrl());
+			List<String> list = downloader.codePageDownloader(task.getUrl(), codePagePath);
+			setResult(list);
 		} else {
 			myLog.debug("正在获取问题提交列表，url为： " + task.getUrl());
 			List<String> list = downloader.problemDescriptionDownloader(task.getUrl(), submissionLinkPath);
@@ -102,7 +109,10 @@ public class DispatchScheduler implements Scheduler {
 	 * @since  1.0.0
 	 */
 	public void setTask(List<String> list, ParserTask.TaskType type) throws InterruptedException {
-		if (list.size() == 0) return;
+		if (list.size() == 0) {
+			myLog.debug("list为空！！！！");
+			return;
+		}
 		if (type != null && type.equals(ParserTask.TaskType.SUBMISION_URL)) {
 			ParserTask task = new ParserTask(new StringBuilder("https://leetcode.com").append(list.get(0)).toString());
 			myLog.debug("正在进行入栈操作，task的url为： " + task.getUrl());
@@ -116,5 +126,9 @@ public class DispatchScheduler implements Scheduler {
 			task.isType();
 			queue.put(task);
 		}
+	}
+	public void setResult(List<String> list) {
+		myLog.debug("正在进行入栈操作，task的name为："+list.get(0));
+		res.addAll(list);
 	}
 }

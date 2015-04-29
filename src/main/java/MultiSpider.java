@@ -6,6 +6,7 @@ import java.util.concurrent.Future;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
+import container.Result;
 import scheduler.DispatchScheduler;
 import downloader.HttpClientDownloader;
 
@@ -31,10 +32,10 @@ public class MultiSpider {
 		return new MultiSpider();
 	}
 
-	public void run() {
+	public void run() throws InterruptedException {
 		myLog.debug("正式开始爬虫");
 		service = Executors.newFixedThreadPool(this.threadNum);
-		for (int i = 0; i < this.threadNum; i++) {
+		for (int i = 0; i < this.threadNum*2; i++) {
 			Future future = service.submit(new Callable() {
 
 				public Object call() throws Exception {
@@ -45,6 +46,8 @@ public class MultiSpider {
 	
 			});
 		}
+		Thread.sleep(60000);
+		System.out.println(Result.getResult().toString());
 	}
 
 	public MultiSpider thread(int num) {
@@ -52,8 +55,8 @@ public class MultiSpider {
 		return this;
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		MultiSpider spider = new MultiSpider().thread(10);
-		spider.create("tanghaodong25@163.com", "***").run();
+		spider.create("tanghaodong25@163.com", "thd04180015").run();
 	}
 }
