@@ -31,7 +31,6 @@ import org.apache.log4j.PropertyConfigurator;
 
 import selector.XpathSelector;
 
-
 public class HttpClientDownloader implements Downloader {
 	private static final String ALGORITHMS = "https://www.leetcode.com/problemset/algorithms/";
 	private static final String INDEX_URL = "https://leetcode.com";                                    														//首页的url地址

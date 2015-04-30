@@ -3,10 +3,13 @@ package scheduler;
 import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.CountDownLatch;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
+import pipeline.ResultPipeLine;
+import pipeline.ResultPipeLineImpl;
 import scheduler.ParserTask.TaskType;
 import container.Container;
 import container.Result;
@@ -15,7 +18,7 @@ import downloader.HttpClientDownloader;
 public class DispatchScheduler implements Scheduler {
 	private HttpClientDownloader downloader = HttpClientDownloader.getInstance();;
 	private static BlockingQueue<ParserTask> queue = Container.getQueue();
-	private static List<String> res = Result.getResult();
+	private static List<String> res = ResultPipeLineImpl.getResult();
 	private static final String problemLinkPath = "//table[@class='table table-striped table-centered']/tbody/tr/td/a/@href";				//进入问题描述 Xpath路径
 	private static final String getProblemLinkPath = "//table[@class='table table-striped table-centered']/tbody/tr/td/a/text()";				//得到题目名称Xpath路径
 	private static final String submissionLinkPath = "//div[@class='row']/div/div/a/@href";																		//进入题目提交页面Xpath路径
