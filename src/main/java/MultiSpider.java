@@ -15,7 +15,7 @@ import downloader.HttpClientDownloader;
 
 public class MultiSpider {
 
-	private Spider spider;
+	private static Spider spider;
 	private ExecutorService service;
 	private String username;
 	private String password;
@@ -41,7 +41,7 @@ public class MultiSpider {
 	}
 	
 	public MultiSpider build() {
-		this.spider = new Spider();
+		spider = new Spider();
 		return this;
 	}
 	
@@ -57,32 +57,38 @@ public class MultiSpider {
 		myLog.debug("MultiSpider创建完毕");
 		return this;
 	}
-
+	
+	static class CallableProccess implements Callable {
+		int threadNum = spider.getThreadNum();
+		private final CountDownLatch threadCount;
+		public CallableProccess(CountDownLatch threadCount) {
+			this.threadCount = threadCount;
+		}
+		public Object call() throws Exception {
+			myLog.debug("进入Executors模块，准备进入taskProcceed方法");
+			scheduler.taskProcceed();
+			myLog.debug("剩余任务数量： "+threadCount.getCount());
+			threadCount.countDown();
+			return null;
+		}
+		
+	}
 	public void run() throws InterruptedException {
 		myLog.debug("正式开始爬虫");
-		int threadNum = this.spider.getThreadNum();
-		String filename = this.spider.getOutputFilename();
+		int threadNum = spider.getThreadNum();
+		String filename = spider.getOutputFilename();
 		service = Executors.newFixedThreadPool(threadNum);
-		
-		myLog.debug("正式收集结果！！存入文件："+filename);
 		final CountDownLatch threadCount = new CountDownLatch(threadNum*3);
+		
+		CallableProccess proccess = new CallableProccess(threadCount);
 		for (int i = 0; i < threadNum*3; i++) {
-			Future future = service.submit(new Callable() {
-
-				public Object call() throws Exception {
-					myLog.debug("进入Executors模块，准备进入taskProcceed方法");
-					scheduler.taskProcceed();
-					myLog.debug("剩余任务数量： "+threadCount.getCount());
-					threadCount.countDown();
-					return null;
-				}
-	
-			});
+			Future future = service.submit(proccess);
 		}
 		threadCount.await();
 		myLog.debug("正式收集结果！！存入文件："+filename);
 		ResultPipeLine pipeline = new ResultPipeLineImpl();
 		pipeline.resultWriter(filename);
+		service.shutdown();
 	}
 
 	public MultiSpider thread(int num) {
