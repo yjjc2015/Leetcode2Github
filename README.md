@@ -8,24 +8,5 @@
  
 -------------------
 
-[TOC]
-
-## 原理图
-```flow
-st=>start: MutipleSpider（模拟登录leetcode）
-e=>end: 结束
-op=>operation: Scheduler
-op1=>operation: Downloader
-cond=>condition: 是否爬取所有数据？
-op2=>operation:	PineLine
-op3=>operation:	模拟登录github
-op4=>operation:	同步数据
-
-st->op->op1->cond->op2->op3->op4
-cond(yes)->op2
-cond(no)->op
-```
-
-
 ## Spider类说明
 
